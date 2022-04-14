@@ -1,5 +1,5 @@
 
-
+/* NAV ---------------------------------- */
 
 .nav {
     background: #252525;
@@ -7,7 +7,7 @@
 }
 
 
-
+/* HEADER------------------------------------- */
 
 .header {
     margin: 0 auto;
@@ -31,12 +31,19 @@
     
 }
 
+
+/* NAV SECUNDARIO */
+
 .nav2__bar {
     background: #252525;
     height: 5rem;
     margin-top: 2rem;
 }
 
+
+
+
+/* ULTIMO VIDEO ---------------------- */
 .lastvideo {
     display: grid;
     max-width: 100rem;
