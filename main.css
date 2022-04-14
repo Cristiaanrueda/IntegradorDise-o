@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Arimo&family=BIZ+UDGothic&family=Exo:ital,wght@1,300&family=Hubballi&family=Mohave:ital,wght@1,600&family=PT+Sans+Narrow&family=Smooch+Sans:wght@100&display=swap');
+
+
+html { 
+    font-size: 10px;
+    font-family: 'Exo', sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Exo', sans-serif;
+    background: #000000;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-size: 3rem;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+}
