@@ -123,6 +123,10 @@
 
 }
 
+/*
+box-shadow: 24.92px 24.92px 60px #404040, -24.92px -24.92px 60px #8A8A8A;  hacerlo hover y animation
+ */
+
 
 /* EVENTOS */
 
@@ -152,7 +156,60 @@
     grid-area: p3;
 }
 
+
+
+
+/* CONTACTO---------------------------------- */
+
+
 .contacto {
-    background: #252525;
+    background: black;
     height: 60rem;
+}
+
+.contacto h2 {
+    text-align: center;
+}
+
+
+
+.contacto__form {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    'nombre apellido'
+    'email asunto'
+    'mensaje mensaje'
+    'submit submit'
+    ;
+}
+
+
+.nombre {
+    grid-area: nombre;
+}
+.apellido {
+    grid-area: apellido;
+}
+.email {
+    grid-area: email;
+}
+.asunto {
+    grid-area: asunto;
+}
+.mensaje {
+    grid-area: mensaje;
+}
+.submit {
+    grid-area: submit;
+}
+
+
+
+
+/* FOOTER--------------------------------------------- */
+
+footer {
+    background: #252525;
+    height: 20rem;
 }
