@@ -3,9 +3,36 @@
 
 .nav {
     background: #252525;
-    height: 5rem;
+    height: 10rem;
 }
 
+
+.toggle {
+    display: none;
+}
+
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    /* flex-wrap: wrap; */
+}
+
+.nav li {
+    display: inline-block;
+    /* margin-right: 2rem;
+    margin-left: 2rem; */
+    text-align: center;
+    width: 100%;
+}
+
+.navWrapper {
+    max-width: 180rem;
+    margin: 0 auto;
+}
 
 /* HEADER------------------------------------- */
 
@@ -36,6 +63,7 @@
 
 .nav2__bar {
     background: #252525;
+    /* background: black; */
     height: 5rem;
     margin-top: 2rem;
 }

@@ -4,13 +4,14 @@
 html { 
     font-size: 10px;
     font-family: 'Exo', sans-serif;
+    box-sizing: border-box;
 }
 
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 
@@ -38,8 +39,21 @@ p {
 a {
     text-decoration: none;
     color: white;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: inline-block;
+
+}
+a:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 ul {
     list-style: none;
 }
+
+
+
+
+/* https://pearljam.com/ */
