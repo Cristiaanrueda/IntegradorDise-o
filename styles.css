@@ -2,8 +2,7 @@
 /* NAV ---------------------------------- */
 
 .nav {
-    background: #252525;
-    height: 10rem;
+    /* background: #252525; */
 }
 
 
@@ -16,23 +15,49 @@
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-evenly;
-    font-size: 2rem;
+    justify-content: center;
+    font-size: 1.8rem;
+    /* margin-right: 15rem; */
     /* flex-wrap: wrap; */
 }
 
+
 .nav li {
-    display: inline-block;
-    /* margin-right: 2rem;
-    margin-left: 2rem; */
+    /* display: inline-block; */
+    display: flex;
     text-align: center;
+    align-items: center;   
+    /* margin-left: 35px;
+    margin-right: 35px; */
+    margin-top: 4rem;
     width: 100%;
 }
+
+
+
+
+.nav a {
+    font-weight: 100;
+    letter-spacing: -2px;
+
+}
+
 
 .navWrapper {
     max-width: 180rem;
     margin: 0 auto;
+
 }
+
+.home{
+    background: none;
+    font-size: 4rem;
+    /* margin-right: 40rem; */
+
+}
+
+
+
 
 /* HEADER------------------------------------- */
 
@@ -64,7 +89,8 @@
 .nav2__bar {
     background: #252525;
     /* background: black; */
-    height: 5rem;
+    /* height: 5rem; */
+    height: 0.5rem;
     margin-top: 2rem;
 }
 

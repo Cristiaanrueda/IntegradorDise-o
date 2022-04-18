@@ -39,19 +39,23 @@ p {
 a {
     text-decoration: none;
     color: white;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(66, 64, 64, 0.288);
     width: 100%;
     display: inline-block;
 
 }
 a:hover {
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(185, 179, 179, 0.61);
 }
 
 ul {
     list-style: none;
 }
+
+
+
+
 
 
 
