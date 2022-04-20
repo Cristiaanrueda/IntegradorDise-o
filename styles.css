@@ -194,16 +194,33 @@ hr {
 
 /* ALBUMES */
 
-.albumes {
+.albumes{
+    background: #252525;
+    height: 110rem;
+    display: grid;
+    max-width: 190rem;
+    margin: 0 auto;
+}
+.albumes__contenedor {
     background: #252525;
     height: 100rem;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    /* grid-template-columns: 400px 400px 400px; */
+    /* grid-template-columns: 25vw 25vw 25vw; */
+    /* grid-template-columns: repeat(3, 40rem); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     /* max-width: 180rem; */
-    grid-gap: 2rem;
+    grid-gap: 1rem;
+}
+
+.albumes__contenedor--item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
 
 }
 
