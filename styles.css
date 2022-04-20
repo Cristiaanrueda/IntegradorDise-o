@@ -15,10 +15,12 @@
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    /* justify-content: flex-start; */
     font-size: 1.8rem;
     /* margin-right: 15rem; */
     /* flex-wrap: wrap; */
+
+
 }
 
 
@@ -31,6 +33,7 @@
     margin-right: 35px; */
     margin-top: 4rem;
     width: 100%;
+ 
 }
 
 
@@ -38,7 +41,7 @@
 
 .nav a {
     font-weight: 100;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 
 }
 
@@ -52,8 +55,12 @@
 .home{
     background: none;
     font-size: 4rem;
+    font-weight: 200;
     /* margin-right: 40rem; */
+}
 
+.home:hover {
+    background: none;
 }
 
 
@@ -186,28 +193,23 @@ box-shadow: 24.92px 24.92px 60px #404040, -24.92px -24.92px 60px #8A8A8A;  hacer
 
 .eventos {
     text-align: center;
-    height: 60rem;
+    height: 70rem;
     display: grid;
     grid-template-areas: 
     'h2e h2e h2e'
-    'p1 p2 p3'
+    'ev ev ev'
     ;
+    background: url(./assets/fondopiola.jpg);
 }
 
 .eventos h2 {
     grid-area: h2e;
 }
 
-.p1 {
-    grid-area: p1;
-}
+.eventos__table {
+    grid-area: ev;
 
-.p2 {
-    grid-area: p2;
-}
 
-.p3 {
-    grid-area: p3;
 }
 
 
@@ -219,10 +221,16 @@ box-shadow: 24.92px 24.92px 60px #404040, -24.92px -24.92px 60px #8A8A8A;  hacer
 .contacto {
     background: black;
     height: 60rem;
+    margin-top: 12rem;
+    margin-bottom: 7rem;
 }
+
 
 .contacto h2 {
     text-align: center;
+    margin-right: 61rem;
+    font-size: 4rem;
+    margin-bottom: -1rem;
 }
 
 
@@ -232,7 +240,8 @@ box-shadow: 24.92px 24.92px 60px #404040, -24.92px -24.92px 60px #8A8A8A;  hacer
     justify-content: center;
     grid-template-areas: 
     'nombre apellido'
-    'email asunto'
+    'email email'
+    'asunto asunto'
     'mensaje mensaje'
     'submit submit'
     ;
@@ -248,14 +257,69 @@ box-shadow: 24.92px 24.92px 60px #404040, -24.92px -24.92px 60px #8A8A8A;  hacer
 .email {
     grid-area: email;
 }
+
 .asunto {
     grid-area: asunto;
 }
 .mensaje {
     grid-area: mensaje;
+    margin: 0 auto;
 }
 .submit {
     grid-area: submit;
+    margin: 0 auto;
+   
+}
+
+#submit--width {
+    width: 10rem;
+
+}
+
+.textplace {
+    height: 20rem;
+    width: 82rem;
+    resize: none;
+    margin-left: -6rem;
+    margin-top: 2rem;
+    background: rgba(185, 179, 179, 0.096);
+    outline: none;
+    font-size: 2.3rem;
+    color: white;
+}
+
+.textplace:hover {
+    background: rgba(185, 179, 179, 0.233);
+}
+
+.contacto__form input {
+    background: rgba(185, 179, 179, 0.096);
+    height: 6rem;
+    width: 40rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    color: white;
+    outline: none;
+    font-size: 2.3rem;
+}
+
+.contacto__form input:hover {
+    background: rgba(185, 179, 179, 0.233);
+    
+}
+
+#email--width {
+    width: 82rem;
+}
+
+select {
+    background: rgba(185, 179, 179, 0.295);
+    font-size: 2rem;
+    color: grey;
+}
+
+option {
+    font-size: 2rem;
 }
 
 

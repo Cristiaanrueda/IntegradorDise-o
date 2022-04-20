@@ -57,29 +57,67 @@
 
 <section class="eventos">
     <h2>PROXIMOS EVENTOS</h2>
-    <p class="p1">BSASBSAS</p>
-    <p class="p2">BRRASIL</p>
-    <p class="p3">COLOMBIA</p>
+    <div class="eventos__table">
+    <table>
+        <thead>
+        <tr>
+            <th>FECHA</th>
+            <th>LOCACION</th>
+            <th>LUGAR</th>
+            <th>DETALLES</th>
+            <th>TICKETS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>07 MAYO</th>
+            <td>Buenos Aires, AR</td>
+            <td>Luna Park</td>
+            <td>Tour 2022</td>
+            <td><a href="">Adquirir</a></td>
+        </tr>
+        <tr>
+            <th>07 MAYO</th>
+            <td>Buenos Aires, AR</td>
+            <td>Luna Park</td>
+            <td>Tour 2022</td>
+            <td><a href="">Adquirir</a></td>
+        </tr>
+        <tr>
+            <th>07 MAYO</th>
+            <td>Buenos Aires, AR</td>
+            <td>Luna Park</td>
+            <td>Tour 2022</td>
+            <td><a href="">Adquirir</a></td>
+        </tr>
+        <tr>
+            <th>07 MAYO</th>
+            <td>Buenos Aires, AR</td>
+            <td>Luna Park</td>
+            <td>Tour 2022</td>
+            <td><a href="">Adquirir</a></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
 </section>
 
 <section class="contacto">
-    <h2>Contactanos</h2>
+    <h2>Contáctanos</h2>
+    <fieldset>
     <form action="" class="contacto__form">
         <label for="nombre" class="nombre">
-            <p>Nombre:</p>
-            <input type="text" name="nombre" required>
+            <input type="text" name="nombre" placeholder="NOMBRE / NAME" required >
         </label>
         <label for="apellido" class="apellido">
-            <p>Apellido:</p>
-            <input type="text" name="apellido" required>
+            <input type="text" name="apellido" placeholder="APELLIDO / SURNAME" required >
         </label>
         <label for="email" class="email">
-            <p>email de contacto:</p>
-            <input type="email" name="email" required>
+            <input type="email" name="email" placeholder="EMAIL" required  id="email--width">
         </label>
         <label for="options" class="options">
             <p>Asunto</p>
-            <select name="options" required>
+            <select name="options"required>
                 <option value="blank"></option>
                 <option value="Seguidores">Seguidores</option>
                 <option value="Comerciales">Comerciales</option>
@@ -88,13 +126,15 @@
             </select>
         </label>
         <label for="mensaje" class="mensaje">
-            <p>Mensaje:</p>
-            <input type="text" name="mensaje" required>
+            Mensaje
+            <!-- <input type="text" name="mensaje" required placeholder="Mensaje" id="textplace"> -->
+            <textarea name="mensaje" class="textplace" cols="30" rows="10" placeholder="Mensaje"></textarea>
         </label>
         <label for="submit" class="submit">
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="submit--width">
         </label>
     </form>
+</fieldset>
 </section>
 <footer>
     <div class="iconos">
