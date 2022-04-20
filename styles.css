@@ -1,3 +1,24 @@
+/* HEADER--------------- */
+header {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header a {
+    background: none;
+    width: auto;
+    margin: 3px;
+    font-size: 1.3rem;
+}
+
+hr {
+    margin: 0;
+}
+
+
+
+
 
 /* NAV ---------------------------------- */
 
@@ -14,6 +35,13 @@
     height: 35px;
     margin-top: 3.8rem;
     margin-left: 1.5rem;
+}
+
+.nav--icon__fix {
+    background: none;
+}
+.nav--icon__fix:hover {
+    background: none;
 }
 
 
@@ -81,9 +109,9 @@
 
 
 
-/* HEADER------------------------------------- */
+/* PORTADA------------------------------------- */
 
-.header {
+.portada {
     margin: 0 auto;
     max-width: 180rem;
 
@@ -92,7 +120,7 @@
 
 
 
-.header__img {
+.portada__img {
     display: inline-block;
     background: url(/assets/nav.jpg);
     background-position: center;
