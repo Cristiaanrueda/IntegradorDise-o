@@ -5,6 +5,17 @@
     /* background: #252525; */
 }
 
+.nav--icon {
+    background-image: url(/assets/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 35px;
+    margin-top: 3.8rem;
+    margin-left: 1.5rem;
+}
+
 
 .toggle {
     display: none;
@@ -49,6 +60,10 @@
 .navWrapper {
     max-width: 180rem;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+
 
 }
 
