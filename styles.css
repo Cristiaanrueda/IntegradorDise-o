@@ -322,12 +322,61 @@ option {
     font-size: 2rem;
 }
 
+.options p {
+    font-size: 2rem;
+}
+
 
 
 
 /* FOOTER--------------------------------------------- */
 
 footer {
-    background: #252525;
-    height: 20rem;
+    /* background: #252525; */
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 5rem;
+}
+
+.derechos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+    margin-top: 3rem;
+}
+
+.derechos a {
+    background: none;
+    font-size: 1.5rem;
+}
+
+.derechos p {
+    font-size: 1.5rem;
+}
+
+/* .derechos__soporte {
+    width: auto;
+} */
+
+.iconos{
+    margin-top: 3rem;
+
+}
+
+.iconos ul {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    font-size: 1.5rem;
+    text-align: left;
+    display: flex;
+}
+
+.iconos li {
+    margin: 1rem;
+    font-size: 2rem;
+
+}
+
+.iconos a {
+    background: none;
 }

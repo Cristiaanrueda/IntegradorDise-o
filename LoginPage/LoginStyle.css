@@ -1,0 +1,88 @@
+/*
+
+.box {
+	height: 300px;
+	width: 300px;
+	transition: box-shadow 2s ease-out ;
+	margin: 0 auto;
+}
+
+
+.box:hover {
+		-webkit-box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
+box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
+}
+
+*/
+
+
+.nav {
+    /* background: #252525; */
+}
+
+
+.toggle {
+    display: none;
+}
+
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 1.8rem;
+    /* margin-right: 15rem; */
+    /* flex-wrap: wrap; */
+}
+
+
+.nav li {
+    /* display: inline-block; */
+    display: flex;
+    text-align: center;
+    align-items: center;   
+    /* margin-left: 35px;
+    margin-right: 35px; */
+    margin-top: 4rem;
+    width: 100%;
+}
+
+
+
+
+.nav a {
+    font-weight: 100;
+    letter-spacing: -2px;
+
+}
+
+
+.navWrapper {
+    max-width: 180rem;
+    margin: 0 auto;
+	
+}
+
+.LoginSignup{
+	margin: 0 auto;
+
+}
+
+
+
+
+.LSContenedor {
+	margin: 0 auto;
+	max-width: 180rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 2rem;
+}
+
+
+.form{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+	
