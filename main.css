@@ -28,6 +28,10 @@ h5,
 h6 {
     color: white;
     font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
 }
 
 p {
