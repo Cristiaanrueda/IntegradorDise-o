@@ -81,7 +81,14 @@ hr {
 .nav a {
     font-weight: 100;
     letter-spacing: -1px;
+    transition: color 1s ease-out,
+                background 1s ease-out;
 
+}
+
+.nav a:hover:not(.home) {
+    color: rgba(194, 166, 11, 0.925);
+    background: rgba(66, 64, 64, 0.829);;
 }
 
 
@@ -221,7 +228,12 @@ hr {
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
+    margin-right: 2rem;
+    transition: box-shadow 2s ease-out;
+}
 
+.albumes__contenedor--item:hover {
+    box-shadow: 12px 12px 40px #1a1a1a, -12px -12px 40px #c5c2c2;
 }
 
 
@@ -268,8 +280,23 @@ box-shadow: 24.92px 24.92px 60px #404040, -24.92px -24.92px 60px #8A8A8A;  hacer
 
 .eventos__table {
     grid-area: ev;
+    display: flex;
 
 
+}
+
+.eventos__table__a {
+    background: rgba(255, 255, 255, 0);
+    transition: background 2s ease-out;
+    height: 3rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventos__table__a:hover {
+    /* background: rgba(255, 255, 255, 0.253); */
+    background: rgba(190, 132, 6, 0.603);
 }
 
 
