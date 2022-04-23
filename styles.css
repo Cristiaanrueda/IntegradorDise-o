@@ -735,3 +735,86 @@ footer {
 }
 
 }
+
+
+@media (min-width: 20rem) and (max-width: 70rem) {
+
+    .portada {
+        margin: 0 auto;
+      
+    }
+
+    .portada__img {
+        background: url(/assets/nav.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 2fr;
+    }
+
+    .nav2__bar{
+        margin-top: -2rem;
+    }
+
+
+    .lastvideo__boxvid__vid {
+        width: auto;
+
+
+    }
+
+table{
+    font-size: 1.3rem;
+    table-layout: auto;
+    
+}
+
+.eventos__table__a {
+    background: rgba(194, 136, 11, 0.726);
+    width: auto;
+    padding: 0.5rem;
+    /* PARA QUE SE CENTRE VERTICALMENTE EL TEXTO EN EL ANCHOR */
+    display: flex;
+}
+
+.eventos__table {
+    overflow: hidden;
+}
+
+
+
+
+    .contacto__form input {
+        max-width: fit-content;
+    }
+
+    .textplace {
+        margin: 0 auto;
+        width: 100%;
+       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+        margin-bottom: 2rem;
+    
+    }
+
+    .derechos p {
+        max-width: auto;
+        font-size: 1rem;
+    }
+
+    .derechos a {
+        font-size: 1rem;
+        max-width: auto;
+    }
+
+    .iconos {
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+}
