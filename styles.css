@@ -101,9 +101,9 @@ hr {
 .navWrapper {
     max-width: 180rem;
     margin: 0 auto;
-    display: grid;
+/*     display: grid;
     grid-template-columns: 60px auto;
-    align-items: center;
+    align-items: center; */
 
 
 }
