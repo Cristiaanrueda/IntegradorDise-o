@@ -15,33 +15,26 @@
         <hr>
         <a href="">Registrate</a>
     </header>
-    <nav>
-        <div class="navWrapper">
-            <a href="" class="nav--icon__fix"><div class="nav--icon"></div></a>
-            <div class="nav">
-                <a href="" class="toggle">☰ Menu</a>
+    <div class="navWrapper">
+     <nav class="nav">
+            <a href="#" class="nav--icon__fix"><div class="nav--icon"></div></a>
+                <a href="#" class="toggle">☰ Menu</a>
                 <ul>
-                    <li class="nav__li--fix"><a href="" class="home">BABASONICOS</a></li>
+                    <li class="nav__li--fix"><a href="#" class="home">BABASONICOS</a></li>
                     <li><a href="">NOVEDADES</a></li>
-                    <li><a href="">MUSICA</a></li>
-                    <li><a href="">TOUR</a></li>
+                    <li><a href="#musica">MUSICA</a></li>
+                    <li><a href="#eventos">EVENTOS</a></li>
                     <li><a href="">NOSOTROS</a></li>
-                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-<div class="portada">
+     </nav>
+    </div>
     <div class="portada__img">
-    </div>
-</div>
+   </div>
 
 
-<div class="nav2">
     <div class="nav2__bar">
-
     </div>
-</div>
 
 <section class="lastvideo">
     <div class="lastvideo__boxvid">
@@ -51,20 +44,20 @@
     </div>
 </section>
 
-<section class="albumes">
-    <h2>DISCOGRAFÍA</h2>
+<section class="albumes" id="musica">
+    <!-- <h2>DISCOGRAFÍA</h2> -->
 <div class="albumes__contenedor">
-    <span class="albumes__contenedor--item img1"><img src="/assets/jessico.jpg" alt=""></span>
-    <span class="albumes__contenedor--item img2"><img src="/assets/roman.jpeg" alt=""></span>
-    <span class="albumes__contenedor--item img3"><img src="/assets/inf.jpg" alt=""></span>
-    <span class="albumes__contenedor--item img4"><img src="/assets/fe.jpg" alt=""></span>
-    <span class="albumes__contenedor--item img5"><img src="/assets/priv.jpg" alt=""></span>
-    <span class="albumes__contenedor--item img6"><img src="/assets/inf.jpg" alt=""></span>
+    <span class="albumes__contenedor--item"><img src="/assets/jessico.jpg" alt=""></span>
+    <span class="albumes__contenedor--item"><img src="/assets/roman.jpeg" alt=""></span>
+    <span class="albumes__contenedor--item"><img src="/assets/inf.jpg" alt=""></span>
+    <span class="albumes__contenedor--item"><img src="/assets/fe.jpg" alt=""></span>
+    <span class="albumes__contenedor--item"><img src="/assets/priv.jpg" alt=""></span>
+    <span class="albumes__contenedor--item"><img src="/assets/inf.jpg" alt=""></span>
 
 </div>
 </section>
 
-<section class="eventos">
+<section class="eventos" id="eventos">
     <h2>PROXIMOS EVENTOS</h2>
     <div class="eventos__table">
     <table>
@@ -111,7 +104,7 @@
 </div>
 </section>
 
-<section class="contacto">
+<section class="contacto" id="contacto">
     <h2>Contáctanos</h2>
     <fieldset>
     <form action="" class="contacto__form">
@@ -175,6 +168,14 @@
     
 </footer>
 
-    
+    <script>
+        const toggle = document.querySelector('.toggle');
+        console.log(toggle);
+        const navUl = document.querySelector('nav.nav ul');
+        console.log(navUl);
+        toggle.addEventListener('click', () => { 
+            navUl.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

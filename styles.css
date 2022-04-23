@@ -673,7 +673,7 @@ footer {
     .nav--icon {
         /* display: none; */
         display: flex;
-        order: 1;
+        /* order: 1; */
        margin-left: auto;
        margin-right: auto;
     }
@@ -764,8 +764,9 @@ footer {
     }
 
 table{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     table-layout: auto;
+
     
 }
 
@@ -775,6 +776,7 @@ table{
     padding: 0.5rem;
     /* PARA QUE SE CENTRE VERTICALMENTE EL TEXTO EN EL ANCHOR */
     display: flex;
+
 }
 
 .eventos__table {
@@ -813,7 +815,23 @@ table{
     }
 
 
+    .albumes {
+        display: flex;
+    }
 
+    .albumes__contenedor{
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        margin: 0 auto;
+    }
+
+   .albumes__contenedor--item{
+       display: flex;
+       flex: 0 0 auto;
+       
+
+   }
 
 
 
