@@ -30,6 +30,7 @@ hr {
 
 .nav {
     /* background: #252525; */
+    /* display: inline-block; */
 }
 
 .nav--icon {
@@ -37,11 +38,12 @@ hr {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 35px;
-    margin-top: 3.8rem;
-    margin-left: 1.5rem;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+
 }
+
 
 .nav--icon__fix {
     background: none;
@@ -51,9 +53,11 @@ hr {
 }
 
 
+
 .toggle {
     display: none;
 }
+
 
 
 .nav ul {
@@ -64,6 +68,7 @@ hr {
     font-size: 1.8rem;
     /* margin-right: 15rem; */
     /* flex-wrap: wrap; */
+    
 
 
 }
@@ -92,7 +97,7 @@ hr {
 
 }
 
-.nav a:hover:not(.home) {
+.nav a:hover:not(.home, .nav--icon__fix) {
     color: rgba(194, 166, 11, 0.925);
     background: rgba(66, 64, 64, 0.829);;
 }

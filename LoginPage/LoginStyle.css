@@ -111,6 +111,7 @@ box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
     background: url(/assets/fondopiola.jpg);
     width: 42vw;
     margin-left: 2rem;
+    border: 2px solid white;
     
 
 }
@@ -201,6 +202,7 @@ box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
     margin-right: 2rem;
     width: 42vw;
     height: 45vh;
+    border: 2px solid white;
 
 }
 
@@ -231,6 +233,7 @@ button {
 
     .LSContenedor__formcont {
         margin: 0 auto;
+        
     }
 
     .signup {
