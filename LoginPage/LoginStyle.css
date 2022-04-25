@@ -20,6 +20,24 @@ box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
     /* background: #252525; */
 }
 
+.nav--icon {
+    background-image: url(/assets/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 35px;
+    margin-top: 3.8rem;
+    margin-left: 1.5rem;
+}
+
+.nav--icon__fix {
+    background: none;
+}
+.nav--icon__fix:hover {
+    background: none;
+}
+
 
 .toggle {
     display: none;
@@ -78,26 +96,37 @@ box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
 	/* max-width: 180rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center;
+    justify-items: center; */
     margin-top: 15rem;
     /* background: #252525; */
-    background: url(/assets/fondopiola.jpg);
     /* width: 60vw;
     height: 60vh; */
     text-align: center;
-
+    align-items: center;
 }
 
+
+.LSContenedor__formcont {
+    background: url(/assets/fondopiola.jpg);
+    width: 42vw;
+    margin-left: 2rem;
+    
+
+}
 
 .form{
 	display: inline-block;
     /* flex-direction: column; */
+    
+
 }
 
 .fix {
     color: #fff;
-    float: left;
+    /* float: left; */
+    
+
 }
 
 
@@ -108,6 +137,15 @@ box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
     font-size: 2.4rem;
     margin: 0 auto;
     margin-top: 3rem;
+    max-width: fit-content;
+}
+
+.signupA {
+    background: none;
+}
+.signupA:hover {
+    background: none;
+    
 }
 
 
@@ -144,8 +182,8 @@ box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
 
 
 .ingresar {
-    width: 8vw;
-    height: 4vh;
+    width: 12vw;
+    height: 8vh;
     margin: 0 auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -159,16 +197,126 @@ box-shadow: 30px 30px 80px #111111, -30px -30px 80px #454545;
     align-items: center;
     justify-items: center;
     text-align: center;
+    background: url(/assets/fondopiola.jpg);
+    margin-right: 2rem;
+    width: 42vw;
+    height: 45vh;
+
 }
 
 
 .registrarse {
-    width: 8vw;
-    height: 4vh;
+    width: 15vw;
+    height: 8vh;
     margin: 0 auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
+
+button {
+    background: rgba(185, 179, 179, 0.096);
+    color: white;
+    outline: none;
+}
+
+@media all and (max-width: 630px) {
+    input {
+        width: 100%;
+    }
+
+    .LSContenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LSContenedor__formcont {
+        margin: 0 auto;
+    }
+
+    .signup {
+        margin: 0 auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        height: auto;
+    }
+
+    .registrarse {
+        width: auto;
+        height: auto;
+    }
+
+    .ingresar {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media all and (max-width: 880px) {
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav li {
+        flex: 1 1 50%;
+    }
+
+    .nav--icon {
+        display: none;
+
+    }
+}
+
+
+@media all and (max-width: 800px) {
+    /* NAV ------------------ */
+        .navWrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .navWrapper > *{
+            order: 999;
+        }
+    
+    
+    
+        .nav ul {
+            display: none;
+        }
+    
+        .nav ul.open {
+            display: flex;
+        }
+    
+        .nav li {
+            flex-basis: 100%;
+        }
+    
+    
+        .nav--icon {
+            /* display: none; */
+            display: flex;
+            /* order: 1; */
+           margin-left: auto;
+           margin-right: auto;
+        }
+    
+    
+        .toggle {
+            display: block;
+            width: auto;
+            height: 4rem;
+            font-size: 3rem;
+            background: none;
+            text-align: center;
+        }
+    
+}
+    
 
 
 

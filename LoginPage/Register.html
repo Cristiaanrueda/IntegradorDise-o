@@ -9,25 +9,24 @@
     <title>Login</title>
 </head>
 <body>
-  <nav>
-        <div class="navWrapper">
-            <div class="nav">
-                <a href="#" class="toggle">☰ Menu</a>
-                <ul>
-                    <li class="nav__li--fix"><a href="../index.html" class="home">BABASONICOS</a></li>
-                    <li><a href="../#novedades">NOVEDADES</a></li>
-                    <li><a href="../#musica">MUSICA</a></li>
-                    <li><a href="../#eventos">TOUR</a></li>
-                    <li><a href="">NOSOTROS</a></li>
-                    <li><a href="../#contacto">CONTACTO</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="navWrapper">
+		<nav class="nav">
+			   <a href="../index.html" class="nav--icon__fix"><div class="nav--icon"></div></a>
+				   <a href="#" class="toggle">☰ Menu</a>
+				   <ul>
+					   <li class="nav__li--fix"><a href="#" class="home">BABASONICOS</a></li>
+					   <li><a href="">NOVEDADES</a></li>
+					   <li><a href="../#musica">MUSICA</a></li>
+					   <li><a href="../#eventos">EVENTOS</a></li>
+					   <li><a href="#">NOSOTROS</a></li>
+					   <li><a href="../#contacto">CONTACTO</a></li>
+				   </ul>
+		</nav>
+	   </div>
 	
 	<section class="Registro">
 		<div class="Contenedorform">
-			<h2>Iniciar Sesión</h2>
+			<h2>Registrarse</h2>
 			<div class="Form">
 			<form class="fix">
 				<label for="email">
@@ -55,5 +54,13 @@
 			</form>
 		                	
 	</section>
-
+    <script>
+        const toggle = document.querySelector('.toggle');
+        console.log(toggle);
+        const navUl = document.querySelector('nav.nav ul');
+        console.log(navUl);
+        toggle.addEventListener('click', () => { 
+            navUl.classList.toggle('open');
+        });
+    </script>
 </body>

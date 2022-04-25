@@ -9,21 +9,20 @@
     <title>Login</title>
 </head>
 <body>
-  <nav>
-        <div class="navWrapper">
-            <div class="nav">
-                <a href="#" class="toggle">☰ Menu</a>
-                <ul>
-                    <li class="nav__li--fix"><a href="../index.html" class="home">BABASONICOS</a></li>
-                    <li><a href="../#novedades">NOVEDADES</a></li>
-                    <li><a href="../#musica">MUSICA</a></li>
-                    <li><a href="../#eventos">TOUR</a></li>
-                    <li><a href="">NOSOTROS</a></li>
-                    <li><a href="../#contacto">CONTACTO</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="navWrapper">
+		<nav class="nav">
+			   <a href="../index.html" class="nav--icon__fix"><div class="nav--icon"></div></a>
+				   <a href="#" class="toggle">☰ Menu</a>
+				   <ul>
+					   <li class="nav__li--fix"><a href="#" class="home">BABASONICOS</a></li>
+					   <li><a href="">NOVEDADES</a></li>
+					   <li><a href="../#musica">MUSICA</a></li>
+					   <li><a href="#eventos">EVENTOS</a></li>
+					   <li><a href="">NOSOTROS</a></li>
+					   <li><a href="#contacto">CONTACTO</a></li>
+				   </ul>
+		</nav>
+	   </div>
 	
 	<section class="LoginSignup">
 
@@ -51,17 +50,23 @@
 			</form>
 		</div>
 		</div>
-	
-	
 	<div class="signup">
 	<h2>Registrate</h2>
 	<p>Hacete miembro y recibi 
 	<p>beneficios especiales o </p>
 	<p>gratis para recibir novedades</p>
-	<button class="registrarse">Signup</button>
+	<button class="registrarse"><a href="./Register.html" class="signupA">Signup</a></button>
 	</div>
 	</div>
 		                	
 	</section>
-
+    <script>
+        const toggle = document.querySelector('.toggle');
+        console.log(toggle);
+        const navUl = document.querySelector('nav.nav ul');
+        console.log(navUl);
+        toggle.addEventListener('click', () => { 
+            navUl.classList.toggle('open');
+        });
+    </script>
 </body>

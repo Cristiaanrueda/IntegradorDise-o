@@ -1,3 +1,26 @@
+.nav {
+    /* background: #252525; */
+}
+
+.nav--icon {
+    background-image: url(/assets/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 35px;
+    margin-top: 3.8rem;
+    margin-left: 1.5rem;
+}
+
+.nav--icon__fix {
+    background: none;
+}
+.nav--icon__fix:hover {
+    background: none;
+}
+
+
 .toggle {
     display: none;
 }
@@ -109,6 +132,9 @@
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: -1rem;
+    background: rgba(185, 179, 179, 0.096);
+    color: white;
+    outline: none;
 
 }
 
@@ -116,5 +142,72 @@ h2 {
     padding-top: 2rem;
     margin-bottom: 1rem;
 }
+
+
+@media all and (max-width: 880px) {
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav li {
+        flex: 1 1 50%;
+    }
+
+    .nav--icon {
+        display: none;
+
+    }
+}
+
+
+@media all and (max-width: 800px) {
+    /* NAV ------------------ */
+        .navWrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .navWrapper > *{
+            order: 999;
+        }
+    
+    
+    
+        .nav ul {
+            display: none;
+        }
+    
+        .nav ul.open {
+            display: flex;
+        }
+    
+        .nav li {
+            flex-basis: 100%;
+        }
+    
+    
+        .nav--icon {
+            /* display: none; */
+            display: flex;
+            /* order: 1; */
+           margin-left: auto;
+           margin-right: auto;
+        }
+    
+    
+        .toggle {
+            display: block;
+            width: auto;
+            height: 4rem;
+            font-size: 3rem;
+            background: none;
+            text-align: center;
+        }
+    
+}
+    
 
 
